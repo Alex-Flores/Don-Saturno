@@ -1,0 +1,378 @@
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Bangers', cursive;
+}
+h1,h2,p{
+    font-family: 'Secular One', sans-serif;
+}
+/* aca ocultamos el nav-responsive-ul del submenu */
+.nav-responsive-ul{
+    display: none;
+}
+/* editamos el nav original */
+.nav{
+    background: rgb(240, 86, 86);
+    /* text-align: center; */
+    font-size: 1.3em;
+}
+/* aca ponemos las opcioens uno al lado de otro del menu */
+.nav-li {
+    display: inline-block;
+    padding: 12px;
+}
+/* aca ponemos en color blanco el link y eliminamos la linea subrayada*/
+.nav-li a{
+    color: rgb(148, 139, 139);
+    text-decoration: none;
+}
+/* no existe nav-li i */
+/* ahora hacemos un hover, cuando pasemos el mouse sobre el elemnt a:link pasa algo */
+.nav-li:hover > a{
+    color: rgb(0, 0, 0);
+}
+/* aca le damos una medida maxima y que se ajuste en base a esa medida */
+@media only screen and (max-width: 680px){
+    /* aca hacemos desaparecer el primer menu */
+    .nav-ul{
+        display: none;
+    }
+    /* aca hacemos aparecer otro menu responsive */
+    .nav-responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;    
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    /* aca manejamos valores del menu */
+    .nav{
+        height: 37px;
+    }
+    /* aca le damos estilo al li del submenu */
+    .nav-responsive-li{
+        padding: 9px 20px;
+    }
+    /* ahora modificamos el estilo de la liena subrayada nav.li a:link */
+    .nav-responsive-li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    /* aca le damos valores de medida a la hamburguesita */
+    /* aca manejamos el icono de menu */
+    .nav-responsive-button-container{
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background: rgb(240, 86, 86);
+        margin-top: -64px;
+        z-index: 100;
+    }
+    .nav-li-container{
+        position: relative;
+        top: -1000px;
+        /* aca es para toda la pantalla del dispositivo wh */
+        height: calc(100vh - 64px);
+        background: rgb(240, 86, 86);
+        transition: all 1s;
+        z-index: 1;
+        width: 75%;
+        padding-top: 27px;
+    }
+    .nav-responsive-button{
+        padding: 6px 20px;
+        font-size: 25px;
+    }
+    .nav-responsive-ul:hover > .nav-li-container {
+        top: -27px;
+    }
+    /* ---------------------------------------------------------------------------- */
+    .art{
+        max-width: 100%;
+        margin: 0;
+    }
+    .nav-responsive-li:hover > a{
+        background: rgb(252, 100, 100);
+        color: rgb(0, 0, 0);
+    }
+    .nav-li-container .nav-responsive-li a{
+        text-decoration: none;
+    }
+    /* menipulamos los div del contenido */
+    .art_div4{
+        padding: 0 auto ;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .art_div6{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .art_div5 h2{
+        margin-top: 20px;
+    }
+    .art_div5 p{
+        margin-top: 10px;
+    }
+    .art_div5 .art_p{
+        display: none;
+    }
+}
+
+/* CONTENIDO Y DIV */
+
+.art{
+    background: rgb(255, 216, 216);
+    margin: auto auto;
+    width: 1000px;
+    height: 1000px;
+}
+.pie_pagina{
+    width: 100%;
+    height: 90px;
+    background: rgb(240, 86, 86);
+}
+.pie_pagina .redes, .pie_pagina{
+    text-align: center;
+}
+@media screen and (max-width: 1100px){
+    .nav{
+        text-align: center;
+    }
+    .art{
+        width: 100%;
+        margin: 0;
+    }
+    p{
+        margin-top: 0;
+        font-size: 15px;
+    }
+    h2{
+        margin-left: 0px;
+        font-size: 16px;
+    }
+    .art_div2{
+        text-align: center;
+        justify-items: auto;
+    }
+    .art_div2 input{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+/* aca termina el @media */
+.section_1 > div{
+    display: block;
+    /* padding: 20px; */
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    background: #ccc;
+    box-shadow: 2px 2px 10px transparent;/*rgb(0, 0, 0, .25);*/
+}
+.art_div1 img{
+    height: 100%;
+    width: 100%;
+}
+.art_div4 img{
+    padding-top: 15px;
+    padding-left: 25px;
+    height: 90%;
+    width: 90%;
+    border-radius: 10%;
+}
+.art_div3 h2{
+    text-align: center;
+}
+.art_div3 p{
+    padding: 10px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.art_div2{
+    text-align: center;
+}
+.art_div2 input{
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 50px;
+    height: 40px;
+    width: 600px;
+    color: rgb(100, 55, 55);
+}
+.art_div2 h1{
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.art_div2 p{
+    font-size: 18px;
+}
+.art_div2:hover input{
+    border: 2px solid rgb(253, 0, 0);
+}
+.art_div5 p{
+    padding: 10px;
+}
+.art_div5 h2{
+    text-align: center;
+}
+.art_div6 img{
+    border-radius: 10%;
+    height: 90%;
+    width: 92%;
+    margin-left: 20px;
+}
+/* footer */
+.redes .redes_ul li{
+    display: inline-block;
+}
+.redes .redes_ul a{
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
+.redes .redes_ul i{
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 1px;
+}
+.derechos p{
+    margin-bottom: 20px;
+}
+/* -------------------- PAGINA PRODUCTOS ---------------------*/
+.grid_div1 h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.grid_div{
+    background: rgb(255, 216, 216);
+    margin: auto auto;
+    width: 1000px;
+    height: 1000px;
+}
+    .grid_div1 p{
+        padding-top: 20px;
+        padding-left: 200px;
+        font-size: 20px;
+    }
+    .grid_div2{
+        padding-left: 30px;
+    }
+    .grid_div2 img{
+        height: 300px;
+        width: 300px;
+    }
+    .grid_div3{
+        padding-left: 30px;
+    }
+    .grid_div3 img{
+        height: 300px;
+        width: 300px;
+    }
+    .grid_div4{
+        padding-left: 30px;
+    }
+    .grid_div4 img{
+        height: 300px;
+        width: 300px;
+    }
+    .grid_div5{
+        padding-left: 30px;
+    }
+    .grid_div5 img{
+        height: 300px;
+        width: 300px;
+    }
+/* --------- PAGINA SOBRE NOSOTROS ----------- */
+.article_grid{
+    background: rgb(255, 216, 216);
+    margin: auto auto;
+    width: 1000px;
+    height: 1000px;
+}
+.article_grid h2{
+    font-size: 26px;
+    text-align: center;
+}
+.article_grid img{
+    width: 100%;
+    height: 400px;
+}
+.article_grid p{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+.article_grid iframe{
+    padding-left: 100px;
+    width: 80%;
+    height: 400px;
+}
+.contacto_div{
+    background: rgb(255, 216, 216);
+    margin: auto auto;
+    width: 1000px;
+    height: 1000px;
+}
+.contacto_div .principal h2{
+    text-align: center;
+}
+.contacto_div .principal p{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.principal_ul li,a{
+    padding-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+/*     text-align: center; */
+.mapa{
+    margin-top: 60px;
+    text-align: center;
+}
+/* ------------ Registro --------------- */
+.registro_div{
+    background: rgb(255, 216, 216);
+    margin: auto auto;
+    width: 1000px;
+    height: 1000px;
+}
+.registro_div .form_div{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    margin-top: 50px;
+}
+.registro_div .form_div input{
+    margin: 15px;
+    width: 300px;
+}
+.form_div label{
+    font-size: 20px;
+}
+.registro_div .form_div select{
+    margin-left: 20px;
+}
+.registro_div .form_div .label_div{
+    margin-left: -250px;
+}

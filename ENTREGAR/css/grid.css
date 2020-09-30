@@ -1,0 +1,100 @@
+/* con esto le damos forma al grid */
+.art .section_1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "contenido contenido contenido contenido"
+                         "imagen    imagen    texto     texto"
+                         "widgets   widgets   widgets   widgets"
+                         "sidebar   sidebar   columna   columna";
+}
+.art .section_1 .art_div1{
+    grid-column: span 4;
+    grid-row: 1;
+}
+.art .section_1 .art_div2{
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.art .section_1 .art_div3{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.art .section_1 .art_div4{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+.art .section_1 .art_div5{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.art .section_1 .art_div6{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+@media only screen and (max-width: 680px){
+    .art .section_1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 188px);
+        grid-template-areas: "contenido  contenido"
+                             "imagen     imagen"
+                             "widgets    widgets"
+                             "sidebar    sidebar";
+    }
+    .art .section_1 .art_div1{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .art .section_1 .art_div2{
+        display: none;
+        margin: 0;
+        padding: 0;
+        /*grid-row: 0;
+        grid-column: 0; */
+    }
+    .art .section_1 .art_div3{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .art .section_1 .art_div4{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .art .section_1 .art_div5{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .art .section_1 .art_div6{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+.grid_div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1 fr 1 fr 1 300px;
+    grid-template-areas: "contenido contenido"
+                         "imagen    imagen"
+                         "texo      texto";
+}
+.grid_div1{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.grid_art2{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid_art3{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid_art4{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid_art5{
+    grid-column: span 1;
+    grid-row: span 1;
+}
