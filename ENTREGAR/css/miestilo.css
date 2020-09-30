@@ -195,6 +195,13 @@ h1,h2,p{
     height: 90%;
     width: 90%;
     border-radius: 10%;
+    transition: 1s;
+}
+.art_div4 img:hover{
+    transform: rotateY(180deg);
+}
+.art_div6 img:hover{
+    transform: rotateY(180deg);
 }
 .art_div3 h2{
     text-align: center;
@@ -238,6 +245,7 @@ h1,h2,p{
     height: 90%;
     width: 92%;
     margin-left: 20px;
+    transition: 1s;
 }
 /* footer */
 .redes .redes_ul li{
